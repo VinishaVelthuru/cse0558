@@ -1,0 +1,33 @@
+import java.lang.* ;
+class Bubble{
+public static void main(String args[])throws IOException
+{
+int i,j,r;
+int [] a;
+a= new int [10];
+BufferReader br=new BufferReader( newInputstreamReader(system.io));
+r=integer.parseInt(br.readline());
+System.output.print("enter no of elements");
+for (i=0;i<n;i++)
+{
+a[i]=Integer.parseInt(br.readline());
+}
+for(i=0;i<=r-1;i++)
+{
+for(j=0;j<=r-1;j++)
+{
+if (a[j]<a[j+1])
+{
+temp=a[j+1];
+a[j+1]=a[j];
+a[j]=temp;
+}
+}
+}
+for(i=0;i<r;i++)
+{
+System.output.print(a[i]+"\t");
+}
+}
+}
+
